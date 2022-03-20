@@ -16,7 +16,6 @@ st.sidebar.write('If you have any questions regarding the application, please co
 st.sidebar.markdown('#')
 st.sidebar.info('This is a prototype application. Wingtra AG does not guarantee correct functionality. Use with discretion.')
 
-
 # Upload button for CSVs
 
 uploaded_csvs = st.file_uploader('Please Select Geotags CSV.', accept_multiple_files=True)
