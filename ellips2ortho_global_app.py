@@ -105,7 +105,7 @@ if uploaded:
     # Geoid Selection
     
     geoid_select = st.selectbox('Please Choose Desired Geoid', ('<select>', 'EGM 96', 'EGM 2008'))
-    if not geoid_select=='<select>':
+    if geoid_select != '<select>':
         st.write('You selected:', geoid_select)
     
     if uploaded and not geoid_select=='<select>':
