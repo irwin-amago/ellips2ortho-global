@@ -53,7 +53,7 @@ if uploaded:
         
         ctr += 1
         
-        # Check if locations are within the United States
+        # Check location
         
         url = 'http://api.geonames.org/countryCode?lat='
         geo_request = url + str(df[lat][0]) + '&lng=' + str(df[lon][0]) + '&type=json&username=irwinamago'
@@ -72,7 +72,7 @@ if uploaded:
             st.error(msg)
             st.stop()
     
-    st.success('All CSVs checked and uploaded successfully.')
+    st.success('All CSVs checked and uploaded successfully. Your locations are in ' + country + '.')
     
     map_options = filenames.copy()
     map_options.insert(0, '<select>')
